@@ -7,8 +7,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <style>
     html, body {
-      height: 100%;
       margin: 0;
+      padding: 0;
+      height: 100%;
       font-family: 'Poppins', sans-serif;
       background: linear-gradient(to bottom right, #0a0712, #1d0e2f);
       color: white;
@@ -20,6 +21,7 @@
       padding: 60px 30px;
       text-align: center;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      width: 100%;
     }
     header h1 {
       color: #c79fff;
@@ -34,16 +36,17 @@
     nav {
       background-color: #2e1c46;
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
       flex-wrap: wrap;
+      gap: 20px;
       padding: 18px;
+      width: 100%;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     }
     nav a {
       color: #c79fff;
       text-decoration: none;
       font-weight: bold;
-      margin: 5px 15px;
       transition: color 0.3s, text-shadow 0.3s;
     }
     nav a:hover {
@@ -52,33 +55,43 @@
     }
     main {
       flex: 1;
-      padding: 60px 20px;
+      width: 100%;
       max-width: 1200px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 40px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      box-sizing: border-box;
+    }
+    h2 {
+      text-align: center;
+      color: #b882ff;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
     }
     .section {
       background-color: #1a1029;
       border-radius: 12px;
       padding: 30px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+      margin-bottom: 30px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
       transition: transform 0.3s ease;
+      width: 100%;
+      box-sizing: border-box;
     }
     .section:hover {
       transform: translateY(-5px);
     }
-    .section h2 {
-      color: #b882ff;
-      font-size: 1.8rem;
+    .section h3 {
+      color: #a259ff;
       margin-bottom: 15px;
-      text-shadow: 0 0 8px rgba(168, 89, 255, 0.5);
+      font-size: 1.5rem;
+      text-align: center;
     }
     .section p, .section ul {
-      font-size: 1.05rem;
+      font-size: 1rem;
+      line-height: 1.6;
       color: #e0d3ff;
-      line-height: 1.7;
+      margin: 0 auto;
+      max-width: 100%;
     }
     .section ul {
       padding-left: 20px;
@@ -92,6 +105,7 @@
       padding: 25px;
       color: #aaa;
       font-size: 0.9rem;
+      width: 100%;
       box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.4);
     }
   </style>
@@ -109,25 +123,22 @@
     <a href="contact.html">Contact</a>
   </nav>
   <main>
+    <h2>Welcome</h2>
     <div class="section">
-      <h2>Welcome</h2>
-      <p>
-        Little Game Productions is a Rec Room creative group bringing immersive, interactive content to life. From circuit-heavy systems to atmospheric builds, our team handles it all with passion and skill.
-      </p>
+      <h3>Who We Are</h3>
+      <p>Little Game Productions is a Rec Room creative team dedicated to building immersive, interactive experiences through expert circuiting, building, and studio workflows.</p>
     </div>
     <div class="section">
-      <h2>Our Mission</h2>
-      <p>
-        We craft highly polished rooms that emphasize creativity, gameplay, and collaboration. Whether you're looking for a feature-rich PvP map or a relaxing hangout space — we deliver.
-      </p>
+      <h3>Our Mission</h3>
+      <p>We deliver polished Rec Room content that balances form and function — fun gameplay, unique design, and technical innovation. Whether it's a PvP map or a cinematic world, we bring your vision to life.</p>
     </div>
     <div class="section">
-      <h2>Services</h2>
+      <h3>What We Do</h3>
       <ul>
-        <li><strong>Circuits:</strong> Advanced CV2 logic and interactive mechanics</li>
-        <li><strong>Building:</strong> Unique and detailed environments</li>
-        <li><strong>RRS:</strong> Workflow with Rec Room Studio</li>
-        <li><strong>Collabs:</strong> Flexible team that works with others</li>
+        <li>Advanced CV2 logic and multiplayer systems</li>
+        <li>Professional-quality environment design</li>
+        <li>Collaboration-ready team structure</li>
+        <li>Experience in RRS and Rec Room Studio</li>
       </ul>
     </div>
   </main>
