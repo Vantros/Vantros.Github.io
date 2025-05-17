@@ -9,68 +9,97 @@
     html, body {
       margin: 0;
       padding: 0;
-      height: 100%;
       font-family: 'Poppins', sans-serif;
-      background-color: #0f0f1a;
+      background: linear-gradient(to bottom right, #0a0712, #1d0e2f);
       color: white;
       display: flex;
       flex-direction: column;
+      min-height: 100vh;
     }
     header {
-      background: linear-gradient(145deg, #1a1a2e, #24143b);
-      padding: 40px 20px;
+      width: 100%;
+      background: linear-gradient(145deg, #1a1a2e, #2d144b);
+      padding: 60px 30px;
       text-align: center;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     }
     header h1 {
-      color: #a259ff;
-      font-size: 3rem;
-      margin-bottom: 10px;
+      color: #c79fff;
+      font-size: 3.5rem;
+      margin-bottom: 15px;
+      text-shadow: 0 0 10px rgba(199, 159, 255, 0.6);
     }
     header p {
-      font-size: 1.2rem;
-      color: #ccc;
+      font-size: 1.3rem;
+      color: #d1b7ff;
     }
     nav {
-      background-color: #2a2a40;
+      background-color: #2e1c46;
       display: flex;
       justify-content: center;
-      gap: 30px;
-      padding: 15px;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 18px;
+      width: 100%;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     }
     nav a {
-      color: #a259ff;
+      color: #c79fff;
       text-decoration: none;
       font-weight: bold;
-      transition: color 0.3s;
+      transition: color 0.3s, text-shadow 0.3s;
     }
     nav a:hover {
       color: white;
+      text-shadow: 0 0 10px #a259ff;
     }
     main {
       flex: 1;
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      box-sizing: border-box;
     }
-    main h2 {
+    h2 {
+      text-align: center;
+      color: #b882ff;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+    .about-section {
+      background-color: #1a1029;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease;
+      width: 100%;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    .about-section:hover {
+      transform: translateY(-5px);
+    }
+    .about-section h3 {
       color: #a259ff;
-      font-size: 2.2rem;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
+      font-size: 1.5rem;
     }
-    main p, li {
-      font-size: 1.1rem;
-      line-height: 1.8;
-      color: #ddd;
-    }
-    ul {
-      padding-left: 20px;
+    .about-section p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #e0d3ff;
+      margin: 0 auto;
+      max-width: 100%;
     }
     footer {
       background-color: #1a1a2e;
       text-align: center;
-      padding: 30px;
+      padding: 25px;
       color: #aaa;
       font-size: 0.9rem;
+      width: 100%;
+      box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.4);
     }
   </style>
 </head>
@@ -87,19 +116,13 @@
     <a href="contact.html">Contact</a>
   </nav>
   <main>
-    <h2>About Little Game Productions</h2>
-    <p>
-      Little Game Productions is a creative Rec Room team made up of builders, scripters, and designers who are passionate about crafting unique virtual worlds. We specialize in building fun, functional, and polished experiences using the full power of Rec Room Studio, CV2 circuits, and collaborative imagination.
-    </p>
-    <p>
-      Our goal is simple: turn even the smallest idea into something unforgettable. Whether it’s a competitive PvP map, a cozy hangout room, or a fully interactive experience, we approach each project with care, creativity, and teamwork.
-    </p>
-    <ul>
-      <li>✔ Mastery of CV2 circuits and logic</li>
-      <li>✔ High-quality building and environment design</li>
-      <li>✔ Rec Room Studio workflows and optimization</li>
-      <li>✔ Collaborative spirit and community engagement</li>
-    </ul>
+    <h2>About Us</h2>
+    <div class="about-section">
+      <h3>Creative Builders. Technical Innovators.</h3>
+      <p>
+        Little Game Productions is a tight-knit team of builders, circuiteers, and designers working together inside Rec Room to craft innovative, fun, and immersive experiences. With a focus on high-quality environments, advanced CV2 systems, and a collaborative team culture, we push the boundaries of what’s possible. Whether it’s a competitive PvP map or a scenic hangout world, our goal is to bring ideas to life with style and precision.
+      </p>
+    </div>
   </main>
   <footer>
     <p>&copy; 2025 Little Game Productions. All rights reserved.</p>
