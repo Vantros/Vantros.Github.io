@@ -3,15 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Creative Brand | Home</title>
+  <title>Little Game Productions | Home</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
   <style>
-    body {
+    html, body {
+      height: 100%;
+      margin: 0;
       font-family: 'Poppins', sans-serif;
       background-color: #0f0f1a;
       color: white;
-      margin: 0;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
     }
     header {
       background: linear-gradient(145deg, #1a1a2e, #24143b);
@@ -26,6 +30,7 @@
     header p {
       font-size: 1.2rem;
       color: #ccc;
+      margin: 10px 0 0;
     }
     nav {
       background-color: #2a2a40;
@@ -44,19 +49,19 @@
       color: white;
     }
     main {
+      flex: 1;
       padding: 60px 20px;
       max-width: 1000px;
       margin: auto;
-      text-align: center;
+      line-height: 1.8;
     }
     main h2 {
       color: #a259ff;
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       margin-bottom: 20px;
     }
-    main p {
+    main p, ul {
       font-size: 1.1rem;
-      line-height: 1.8;
       color: #ddd;
     }
     footer {
@@ -65,14 +70,13 @@
       padding: 30px;
       color: #aaa;
       font-size: 0.9rem;
-      margin-top: 60px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Creative Brand</h1>
-    <p>Your vision, styled with purpose.</p>
+    <h1>Little Game Productions</h1>
+    <p>Small team. Big ideas. Infinite worlds.</p>
   </header>
   <nav>
     <a href="index.html">Home</a>
@@ -82,17 +86,23 @@
     <a href="contact.html">Contact</a>
   </nav>
   <main>
-    <h2>Welcome to Creative Brand</h2>
+    <h2>Welcome to Little Game Productions</h2>
     <p>
-      We specialize in building high-end, visually stunning, and user-friendly websites for modern brands.
-      Our mission is to bring your digital vision to life with sleek design and powerful development.
+      We are a passionate Rec Room creative team building unique, interactive, and visually engaging experiences. Our work includes everything from complex circuits to immersive environments, bringing your wildest ideas to life in VR.
     </p>
     <p>
-      Whether you need a fresh look or a full branding solution, Creative Brand delivers results that matter.
+      At LGP, each project is crafted with care, precision, and a focus on community enjoyment. Whether you're here to explore our builds, join our team, or request a custom world — you're in the right place.
     </p>
+    <h2>What We Do</h2>
+    <ul>
+      <li><strong>Circuits:</strong> Functional CV2 systems for PvP, AI, and interactive elements</li>
+      <li><strong>Building:</strong> Clean, high-quality environments with style and detail</li>
+      <li><strong>RRS/Studio:</strong> Professional workflows using Rec Room Studio and logic</li>
+      <li><strong>Collaboration:</strong> We partner with other creators and communities</li>
+    </ul>
   </main>
   <footer>
-    <p>&copy; 2025 Creative Brand. All rights reserved.</p>
+    <p>&copy; 2025 Little Game Productions. All rights reserved.</p>
   </footer>
 </body>
 </html>
