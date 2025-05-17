@@ -11,65 +11,77 @@
       padding: 0;
       height: 100%;
       font-family: 'Poppins', sans-serif;
-      background-color: #0f0f1a;
+      background: linear-gradient(to bottom right, #0a0712, #1d0e2f);
       color: white;
       display: flex;
       flex-direction: column;
     }
     header {
-      background: linear-gradient(145deg, #1a1a2e, #24143b);
-      padding: 40px 20px;
+      background: linear-gradient(145deg, #1a1a2e, #2d144b);
+      padding: 60px 30px;
       text-align: center;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      width: 100%;
     }
     header h1 {
-      color: #a259ff;
-      font-size: 3rem;
-      margin-bottom: 10px;
+      color: #c79fff;
+      font-size: 3.5rem;
+      margin-bottom: 15px;
+      text-shadow: 0 0 10px rgba(199, 159, 255, 0.6);
     }
     header p {
-      font-size: 1.2rem;
-      color: #ccc;
+      font-size: 1.3rem;
+      color: #d1b7ff;
     }
     nav {
-      background-color: #2a2a40;
+      background-color: #2e1c46;
       display: flex;
       justify-content: center;
-      gap: 30px;
-      padding: 15px;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 18px;
+      width: 100%;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     }
     nav a {
-      color: #a259ff;
+      color: #c79fff;
       text-decoration: none;
       font-weight: bold;
-      transition: color 0.3s;
+      transition: color 0.3s, text-shadow 0.3s;
     }
     nav a:hover {
       color: white;
+      text-shadow: 0 0 10px #a259ff;
     }
     main {
       flex: 1;
-      padding: 60px 20px;
-      max-width: 1200px;
+      max-width: 1100px;
+      width: 100%;
       margin: auto;
+      padding: 40px 20px;
+      box-sizing: border-box;
     }
-    main h2 {
-      color: #a259ff;
-      font-size: 2.5rem;
-      margin-bottom: 20px;
+    h2 {
       text-align: center;
+      color: #b882ff;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
     }
     .member-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
-      margin-top: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
     }
     .member {
-      background-color: #1e1e2f;
+      background-color: #1a1029;
       padding: 20px;
       border-radius: 10px;
       text-align: center;
       box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+    .member:hover {
+      transform: translateY(-5px);
     }
     .member h3 {
       color: #a259ff;
@@ -84,32 +96,20 @@
       padding: 0;
       margin-top: 10px;
       color: #bbb;
-    }
-    .member ul li {
       font-size: 0.95rem;
+    }
+    .member ul li::before {
+      content: '• ';
+      color: #a259ff;
     }
     footer {
       background-color: #1a1a2e;
       text-align: center;
-      padding: 30px;
+      padding: 25px;
       color: #aaa;
       font-size: 0.9rem;
-      margin-top: 60px;
-    }
-    @media (max-width: 1000px) {
-      .member-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-    @media (max-width: 700px) {
-      .member-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-    @media (max-width: 500px) {
-      .member-grid {
-        grid-template-columns: 1fr;
-      }
+      width: 100%;
+      box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.4);
     }
   </style>
 </head>
@@ -133,35 +133,35 @@
         <p>Lead Circuiteer & Builder</p>
         <ul>
           <li>Specializes in CV2 and RRS</li>
-          <li>Known for fast and clean system logic</li>
-          <li>Works on PvP mechanics and multiplayer logic</li>
+          <li>Fast and clean logic systems</li>
+          <li>Builds PvP and interactive mechanics</li>
         </ul>
       </div>
       <div class="member">
         <h3>Takeovermonk</h3>
         <p>Founder & Builder</p>
         <ul>
-          <li>Founder of LGP and creative director</li>
-          <li>Designs key environments and leads map builds</li>
-          <li>Responsible for project vision and branding</li>
+          <li>Leads creative vision for LGP</li>
+          <li>Designs environments and themes</li>
+          <li>Coordinates team and branding</li>
         </ul>
       </div>
       <div class="member">
         <h3>Fallout</h3>
         <p>Co-Founder & Builder</p>
         <ul>
-          <li>Collaborates on major builds</li>
-          <li>Helps balance gameplay elements</li>
-          <li>Supports team coordination and room flow</li>
+          <li>Collaborates on core build layouts</li>
+          <li>Assists in gameplay balance</li>
+          <li>Supports project organization</li>
         </ul>
       </div>
       <div class="member">
         <h3>Derpy</h3>
         <p>Circuiteer</p>
         <ul>
-          <li>Builds unique circuit interactions</li>
-          <li>Assists with animation and effects</li>
-          <li>Focuses on optimization and testing</li>
+          <li>Creative circuit interactions</li>
+          <li>Animation and VFX support</li>
+          <li>Testing and performance tuning</li>
         </ul>
       </div>
     </div>
